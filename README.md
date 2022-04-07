@@ -22,7 +22,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available , in addition to restricting traffic to the network.
 - What aspect of security do load balancers protect? Availability by shifting traffic which helps defend against denial of service attacks.  What is the advantage of a jump box? having a jumpbox between your local and vm adds another step that an attacker would have to get through before getting to target virtual machines.
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the performance and system logs.
 - What does Filebeat watch for?_ watches log files on on virutal machines. 
 - What does Metricbeat record?_  metrics of the virtual machine's performance.
 
