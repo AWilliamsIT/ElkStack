@@ -50,9 +50,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 72.138.238.186       |
+| Web1     | no                  |20.58.167.26          |
+| Web3     | no                  |20.58.167.26          |
+|elk       | no                  |20.58.167.26  
 
 ### Elk Configuration
 
