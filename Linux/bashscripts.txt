@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  ```bash
     #!/bin/bash
     [Your solution script contents here]
@@ -25,4 +26,33 @@ df -h > ~/backups/freedisk/free_disk.txt
 Port 2222
 #AddressFamily any
 #ListenAddress 0.0.0.0
+=======
+ ```bash
+    #!/bin/bash
+    [Your solution script contents here]
+    ```
+free -h > ~/backups/freemem/free_mem.txt
+du -h > ~/backups/diskuse/disk_usage.txt
+lsof > ~/backups/openlist/open_list.txt
+df -h > ~/backups/freedisk/free_disk.txt
+
+
+  ```bash
+    [Your logrotate scheme edits here]
+    ```/var/log/auth.log {
+        weekly
+        rotate 7
+        notifempty
+        delaycompress
+        missingok
+}
+
+
+```bash
+    sudo nano /etc/ssh/sshd/config
+    ```#Port 22
+Port 2222
+#AddressFamily any
+#ListenAddress 0.0.0.0
+>>>>>>> 3d91536b5b4ec9d495cc961ca5d4262c46ca9be7
 #ListenAddress ::
