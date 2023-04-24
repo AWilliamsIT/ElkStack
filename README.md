@@ -64,8 +64,8 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - Install docker.io and python3-pip using the apt module 
-- ...run the playbook
-- ...nano into hosts file and add the IP of the elk vm
+- run the playbook
+- nano into hosts file and add the IP of the elk vm
 - then create playbook to configure elk server and run playbook
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -74,8 +74,8 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- 10.1.0.5
-- 10.1.0.6
+- 10.1.0.5 (web1)
+- 10.1.0.6 (web2)
 
 We have installed the following Beats on these machines:
 - Filebeat and Metricbeat
@@ -94,5 +94,3 @@ SSH into the control node and follow the steps below:
 - filebeat download, copied to Web vm's
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? filebeat config
 - Which URL do you navigate to in order to check that the ELK server is running? http://20.213.237.110:5601/app/kibana#/management/kibana
-
-
