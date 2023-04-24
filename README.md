@@ -32,9 +32,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 20.58.167.26 | Linux           |
-| Web1     | VM       |10.1.0.5    |  Linux           |
-| Web3     | VM        |10.1.0.6    |  Linux           |
-| Elk     |  VM        |20.213.237.110| Linux           |
+| Web1     | Web App   |10.1.0.5    |  Linux           |
+| Web3     | Web App        |10.1.0.6    |  Linux           |
+| Elk     | Monitoring Server |20.213.237.110| Linux           |
 
 ### Access Policies
 
@@ -42,6 +42,8 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the elk machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 20.58.167.26
+- 10.1.0.5
+- 10.1.0.6
 
 Machines within the network can only be accessed by SSH.
 - Jumpbox@20.58.167.26
@@ -61,8 +63,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - eliminates repetitive tasks of manual configuration and saves time
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...create yml playbook to install docker and configure the container 
+- Install docker.io and python3-pip using the apt module 
 - ...run the playbook
 - ...nano into hosts file and add the IP of the elk vm
 - then create playbook to configure elk server and run playbook
@@ -90,9 +91,8 @@ SSH into the control node and follow the steps below:
 - Update the config file
 - Run the playbook, and navigate to check incoming data to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - filebeat download, copied to Web vm's
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? filebeat config
 - Which URL do you navigate to in order to check that the ELK server is running? http://20.213.237.110:5601/app/kibana#/management/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
