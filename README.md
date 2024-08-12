@@ -2,7 +2,7 @@
 
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yaml file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment. Alternatively, select portions of the yaml file may be used to install only certain pieces of it, such as Filebeat.
   
   - [Ansible Filebeat Config](https://github.com/apellegatta/ElkStack/blob/main/Ansible/ansible/filebeat-config.yml)
 
