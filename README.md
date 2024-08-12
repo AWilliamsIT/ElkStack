@@ -1,8 +1,6 @@
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
 
-!https://github.com/apellegatta/ElkStack/blob/main/Diagram/elk%20network%20diagram
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yaml file may be used to install only certain pieces of it, such as Filebeat.
   
@@ -32,8 +30,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 20.58.167.26 | Linux           |
-| Web1     | Web App   |10.1.0.5    |  Linux           |
-| Web3     | Web App        |10.1.0.6    |  Linux           |
+| Web1     | Web App  |10.1.0.5    |  Linux           |
+| Web3     | Web App  |10.1.0.6    |  Linux           |
 | Elk     | Monitoring Server |20.213.237.110| Linux           |
 
 ### Access Policies
